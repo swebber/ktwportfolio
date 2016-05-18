@@ -115,6 +115,12 @@ add_action( 'widgets_init', 'ktwportfolio_widgets_init' );
  */
 function ktwportfolio_scripts() {
 	wp_enqueue_style( 'ktwportfolio-style', get_stylesheet_uri() );
+	
+	// Add Google Fonts: Roboto
+	wp_enqueue_style( 'ktwportfolio-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' );
+
+	// Add Font Awesome icons (http://fontawesome.io) 
+	wp_enqueue_style( 'ktwportfolio-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
 
 	wp_enqueue_script( 'ktwportfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

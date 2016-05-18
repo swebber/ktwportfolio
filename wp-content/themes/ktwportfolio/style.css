@@ -1,9 +1,9 @@
 /*
 Theme Name: KTWPortfolio
-Theme URI: http://underscores.me/
+Theme URI: http://teagan.org/
 Author: R. Scott Webber
 Author URI: http://teagan.org/
-Description: KTW Portfolio Theame
+Description: KTW Portfolio Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,6 +33,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Header
 # Widgets
 # Content
 	## Posts and pages
@@ -267,9 +268,9 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	font-size: 1rem;
+	/*font-size: 1rem;*/
 	line-height: 1.5;
 }
 
@@ -748,6 +749,72 @@ a:active {
 .site-footer:after {
 	clear: both;
 }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	background-color: #fff;
+	background-size: cover;
+}
+
+.site-header::after {
+	display: block;
+	content: "";
+	width: 100%;
+	border-bottom: solid 4px #f6e05C;
+}
+
+.site-branding {
+	text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+	.site-branding {
+		text-align: left;
+	}
+}
+
+.site-title {
+    display: inline-block;
+    margin: 1em auto .5em;
+    padding: .2em .3em .1em;
+    border: 4px solid #9a1c50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #9a1c50;
+    word-break: break-word;
+}
+
+@media screen and (min-width: 425px) {
+	.site-title {
+		margin: 1em;
+	}
+}
+
+.site-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.site-title a:hover,
+.site-title a:focus {
+	text-decoration: underline;
+}
+
+.site-description {
+	font-style: italic;
+	margin-top: 0;
+}
+
+@media screen and (min-width: 425px) {
+	.site-description {
+		display: inline-block;
+	}
+}
+
 
 /*--------------------------------------------------------------
 # Widgets
